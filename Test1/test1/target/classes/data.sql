@@ -1,0 +1,3 @@
+insert into Users(avatar, Name, email, status, status_last_update) values ('/img1', 'Name1', 'email1@mail.ru', 1, '2022-08-11 01:00:00');
+insert into Users(avatar, Name, email, status, status_last_update) values ('/img2', 'Name2', 'email2@mail.ru', 0, '2022-08-11 02:00:00');
+insert into Users(avatar, Name, email, status, status_last_update) values ('/img3', 'Name3', 'email3@mail.ru', 1, '2022-08-11 03:00:00');
