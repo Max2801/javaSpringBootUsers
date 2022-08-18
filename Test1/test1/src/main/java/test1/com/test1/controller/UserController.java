@@ -37,9 +37,10 @@ public class UserController {
 
     @RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     @Order(Ordered.HIGHEST_PRECEDENCE)
-    public Iterable<User> getAll(@RequestParam(value = "id", required = false) Integer id,
-        @RequestParam(value = "online", required = false) Boolean online) {
+    public Iterable<User> getAll(@RequestParam(value = "id", required = false) Long id,
+            @RequestParam(value = "online", required = false) Boolean online) {
         List<User> result = new ArrayList<>();
+        
         if(id != null) {
             Timestamp timestamp = new Timestamp(id);
             if(online != null) {
